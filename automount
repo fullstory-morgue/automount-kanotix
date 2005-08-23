@@ -1,0 +1,53 @@
+#!/bin/bash
+# Generate an automounter entry automatically
+# for automount /mnt/auto program this_script
+# (C) Klaus Knopper 2002
+# WARNING: This script is used for removable media in KNOPPIX,
+# therefore the mount is always read-write (except for cdroms
+# and ntfs).
+
+# override tool behaviour through distro-defaults
+FLL_LIVE_USER="knoppix"
+[ -r /etc/default/distro ] && source /etc/default/distro
+GROUP=$(getent group $(getent passwd "$FLL_LIVE_USER" | cut -d\: -f4) | cut -d\: -f1)
+
+# Defaults
+rw="rw"
+device="/dev/${1##*/}"
+case "$1" in
+	floppy)
+		[ -s /etc/sysconfig/floppy ] || exit 1; device="/dev/fd0"
+		;;
+	cdrom*)
+		rw="ro"
+		;;
+	dvd*)
+		rw="ro"
+		;;
+esac
+
+# Uses external fstype script from scanpartitions-knoppix
+fs="$(fstype "$device")"
+
+[ "$?" = "0" ] || exit 1
+
+case "$fs" in
+	*fat|msdos)
+		options="${rw},uid=${FLL_LIVE_USER},gid=${GROUP},umask=000"
+		;;
+	ntfs)
+		options="ro,uid=${FLL_LIVE_USER},gid=${GROUP},umask=0222"
+		;;
+	iso9660)
+		options="ro"
+		;;
+	*)
+		options="${rw}"
+		;;
+esac
+
+MNTLINE="-fstype=$fs,users,exec,$options	:$device"
+
+# Return line to the automounter
+echo "$MNTLINE"
+

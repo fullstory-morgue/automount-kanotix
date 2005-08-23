@@ -1,0 +1,42 @@
+automount-kanotix (0.5.6) unstable; urgency=low
+
+  * adapt for distro-defaults.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 23 Aug 2005 14:52:53 +0200
+
+automount-kanotix (0.5-5) unstable; urgency=low
+
+  * fix dependencies. 
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 23 Dec 2004 01:32:15 +0100
+
+automount-kanotix (0.5-4) unstable; urgency=low
+
+  * fork for Kanotix compatibility.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 21 Dec 2004 19:35:52 +0100
+
+automount-knoppix (0.5-4) unstable; urgency=low
+
+  * Exit if floppy was not autodetected by hwsetup
+
+ -- root <root@Knoppix>  Fri, 25 Jul 2003 17:20:30 +0200
+
+automount-knoppix (0.5-3) unstable; urgency=low
+
+  * Replaced fs scanning routine by faster version from scanpartitions
+
+ -- root <root@Knoppix>  Thu,  5 Dec 2002 19:06:31 +0100
+
+automount-knoppix (0.5-2) unstable; urgency=low
+
+  * umask for ntfs=0222
+
+ -- root <root@Knoppix>  Wed,  9 Oct 2002 23:34:45 +0200
+
+automount-knoppix (0.5-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- root <root@Knoppix>  Sun, 11 Aug 2002 16:08:59 +0200
+
