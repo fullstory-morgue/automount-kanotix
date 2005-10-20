@@ -1,3 +1,9 @@
+automount-kanotix (0.5.8) unstable; urgency=low
+
+  * fix a bunch of lintian, errors.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 21 Oct 2005 00:35:53 +0200
+
 automount-kanotix (0.5.7) unstable; urgency=low
 
   * fix mail address.
@@ -26,23 +32,23 @@ automount-knoppix (0.5-4) unstable; urgency=low
 
   * Exit if floppy was not autodetected by hwsetup
 
- -- root <root@Knoppix>  Fri, 25 Jul 2003 17:20:30 +0200
+ -- Klaus Knopper <knopper@knopper.net>  Fri, 25 Jul 2003 17:20:30 +0200
 
 automount-knoppix (0.5-3) unstable; urgency=low
 
   * Replaced fs scanning routine by faster version from scanpartitions
 
- -- root <root@Knoppix>  Thu,  5 Dec 2002 19:06:31 +0100
+ -- Klaus Knopper <knopper@knopper.net>  Thu,  5 Dec 2002 19:06:31 +0100
 
 automount-knoppix (0.5-2) unstable; urgency=low
 
   * umask for ntfs=0222
 
- -- root <root@Knoppix>  Wed,  9 Oct 2002 23:34:45 +0200
+ -- Klaus Knopper <knopper@knopper.net>  Wed,  9 Oct 2002 23:34:45 +0200
 
 automount-knoppix (0.5-1) unstable; urgency=low
 
   * Initial Release.
 
- -- root <root@Knoppix>  Sun, 11 Aug 2002 16:08:59 +0200
+ -- Klaus Knopper <knopper@knopper.net>  Sun, 11 Aug 2002 16:08:59 +0200
 
