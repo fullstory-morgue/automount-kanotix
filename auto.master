@@ -6,5 +6,5 @@
 # /var/autofs/net		/etc/auto.net
 #
 # KNOPPIX automounts for floppy and cdrom(s), see knoppix-autoconfig
-# /mnt/auto	/etc/auto.mnt	--timeout=2
-/mnt/auto	/etc/automount.sh	--timeout=2
+# /media/auto	/etc/auto.mnt	--timeout=2
+/media/auto	/etc/automount.sh	--timeout=2

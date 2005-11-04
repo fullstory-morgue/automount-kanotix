@@ -1,6 +1,6 @@
 #!/bin/bash
 # Generate an automounter entry automatically
-# for automount /mnt/auto program this_script
+# for automount /media/auto program this_script
 # (C) Klaus Knopper 2002
 # WARNING: This script is used for removable media in KNOPPIX,
 # therefore the mount is always read-write (except for cdroms

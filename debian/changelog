@@ -1,8 +1,8 @@
-automount-kanotix (0.5.9) UNRELEASED; urgency=low
+automount-kanotix (0.5.9) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * switch from /mnt/ to /media/.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 21 Oct 2005 00:38:56 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri,  4 Nov 2005 18:31:01 +0100
 
 automount-kanotix (0.5.8) unstable; urgency=low
 
