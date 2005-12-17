@@ -1,8 +1,10 @@
-automount-kanotix (0.5.10) UNRELEASED; urgency=low
+automount-kanotix (0.5.10) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * bump compat level to 5.
+  * remove cdbs auto-update feature.
+  * clean up debian/control.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri,  4 Nov 2005 18:33:21 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Dec 2005 01:36:38 +0100
 
 automount-kanotix (0.5.9) unstable; urgency=low
 
