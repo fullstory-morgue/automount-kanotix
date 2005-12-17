@@ -1,3 +1,9 @@
+automount-kanotix (0.5.11) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Dec 2005 01:38:39 +0100
+
 automount-kanotix (0.5.10) unstable; urgency=low
 
   * bump compat level to 5.
