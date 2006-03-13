@@ -7,7 +7,7 @@ Standards-Version: 3.6.2
 
 Package: automount-kanotix
 Architecture: all
-Depends: autofs, scanpartitions-kanotix (>> 0.5-8), hwsetup-kanotix, ${shlibs:Depends}
+Depends: autofs, scanpartitions-kanotix (>> 0.5-8), initscripts-kanotix-live, ${shlibs:Depends}
 Recommends: distro-defaults
 Description: auto-generate autofs(5) lines on demand
  See automount(8) and installed script /etc/automount.sh
